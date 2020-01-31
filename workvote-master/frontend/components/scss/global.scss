@@ -1,0 +1,330 @@
+body {
+  margin: 0px;
+  font-family: "Helvetica Neue", "Roboto", "Arial", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.login {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.workvote {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.rect-blue {
+  width: 100%;
+  height: 548px;
+  background: #0099FF;
+  text-align: center;
+}
+
+button {
+  font-size: 14px;
+}
+
+h1 {
+  width: 235px;
+  height: 29px;
+  top: 76px;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.detail {
+  top: 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.slack {
+  position: relative;
+  width: 150px;
+  height: 41px;
+  background: #0072F9;
+  border-radius: 30px;
+}
+
+.add {
+  position: absolute;
+  width: 91px;
+  height: 18px;
+  left: 17px;
+  top: 11px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #FFFFFF
+}
+
+.image {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 97px;
+}
+
+.screenshot {
+  width: 770px;
+  height: 535px;
+  background: url(/static/win10.png) no-repeat center;
+  background-size: contain;
+  margin-top: 18px;
+}
+
+.how-title {
+  font-weight: bold;
+  font-size: 30px;
+  color: #000000;
+  margin-top: 103px;
+  margin-left: 0;
+  text-align: left;
+}
+
+.how-it-works {
+  max-width: 770px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+
+  .slack-screen {
+    width: 487px;
+    height: 264px;
+    margin-top: 27px;
+  }
+
+  .how-text {
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 24px;
+    max-width: 259px;
+  }
+}
+
+.slack2 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 5px;
+  top: 5px;
+  background: url(/static/logo2.png);
+}
+
+.text2 {
+  position: absolute;
+  width: 88px;
+  height: 12px;
+  left: 109px;
+  top: 236px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  color: #9B9B9B;
+}
+
+.text3 {
+  position: absolute;
+  width: 259px;
+  height: 142px;
+  left: 511px;
+  top: 62px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: #000000;
+}
+
+.line {
+  width: 259px;
+  border: 2px solid #0099FF;
+}
+
+.text4 {
+  position: absolute;
+  width: 259px;
+  height: 42px;
+  left: 511px;
+  top: 112px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: #000000;
+}
+
+.secondary-panel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-title {
+  padding-top: 700px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 52px;
+}
+
+.pricing {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  height: 135px;
+  background: url(/static/wave.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  margin-top: 32px;
+
+  .copyright {
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    top: 100px;
+    left: 128px;
+    position: relative;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  margin: 20px;
+}
+
+.flex {
+  display: flex;
+
+  &.flex-row {
+    flex-direction: row;
+  }
+
+  &.flex-column {
+    flex-direction: column;
+  }
+}
+
+.next-to {
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .flex.flex-row {
+    flex-direction: column;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: rgb(83, 166, 251);
+
+  :visited {
+    color: rgb(83, 166, 251);
+  }
+}
+
+// This styles suck, need to figure out what this should look like
+
+fieldset {
+  //background-color: white;
+  border: none;
+  // border-radius: 4px;
+  margin-bottom: 5px;
+  // box-shadow: inset 0 1px 1px 0 hsla(240,1%,49%,.3),0 1px 0 0 hsla(0,0%,100%,.7)
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font: sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  background-color: transparent;
+  height: 1.2em;
+  outline: none;
+  border: none;
+}
+
+label {
+  padding-bottom: 10px;
+  font-size: 12px;
+  width: 15%;
+  min-width: 70px;
+  color: rgb(83, 166, 251);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.congrats-modal {
+  position: absolute;
+  top: 30vh;
+  left: 27vw;
+  right: 26vw;
+  height: 300px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.info-modal {
+  position: absolute;
+  top: 20vh;
+  left: 20vw;
+  right: 20vw;
+  height: 70vh;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+blockquote {
+  border-left: 0.25em solid rgb(223, 226, 229);
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+code {
+  background-color: rgba(27, 31, 35, 0.05);
+  padding: 0.2em 0.4em;
+}

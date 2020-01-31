@@ -1,0 +1,76 @@
+{
+  "version": 2,
+  "name": "paddle",
+  "alias": "",
+  "builds": [
+    { "src": "api/poll.js", "use": "@now/node" },
+    { "src": "api/actions.js", "use": "@now/node" },
+    { "src": "api/oauth.js", "use": "@now/node" },
+    { "src": "api/subscriptions.js", "use": "@now/node" },
+    { "src": "api/user.js", "use": "@now/node" },
+    { "src": "api/logout.js", "use": "@now/node" },
+    { "src": "api/cancel_subscription.js", "use": "@now/node" },
+    { "src": "api/change_subscription.js", "use": "@now/node" },
+    { "src": "frontend/next.config.js", "use": "@now/next"},
+    { "src": "frontend/static/*", "use": "@now/static" }
+  ],
+  "env": {
+    "CLIENT_ID": "856261207136.869687499095",
+    "CLIENT_SECRET": "c431189a45e9dee3f715970f3a155ff8",
+    "FAUNA_SECRET": "fnADhtd-ZSACC6JfpezOmNbaLI2I9oTXaXHBCPtq",
+    "STRIPE_SECRET": "sk_test_foRsZzOlwzrQDMdfnjEBeI9j00EtQAa1UB",
+    "SLACK_SIGNING_SECRET": "771436b5bdc4333c41b0b365e4753d1d"
+  },
+  "routes": [
+    {
+      "src": "^/poll",
+      "dest": "/api/poll.js"
+    },
+    {
+      "src": "^/oauth",
+      "dest": "/api/oauth.js"
+    },
+    {
+      "src": "^/actions",
+      "dest": "/api/actions.js"
+    },
+    {
+      "src": "^/subscriptions",
+      "dest": "/api/subscriptions.js"
+    },
+    {
+      "src": "^/cancel_subscription",
+      "dest": "/api/cancel_subscription.js"
+    },
+        {
+      "src": "^/change_subscription",
+      "dest": "/api/change_subscription.js"
+    },
+    {
+      "src": "^/user",
+      "dest": "/api/user.js"
+    },
+    {
+      "src": "^/logout",
+      "dest": "/api/logout.js"
+    },
+    {
+      "src": "^/",
+      "dest": "/frontend/"
+    },
+    {
+      "src": "^/privacy",
+      "dest": "/frontend/privacy"
+    },
+    {
+      "src": "^/static/(.*)",
+      "dest": "/frontend/static/$1",
+      "headers": {"cache-control": "s-maxage=31536000"}
+    },
+    {
+      "src": "^/_next/static/(.*)$",
+      "dest": "/frontend/_next/static/$1",
+      "headers": {"cache-control": "s-maxage=31536000"}
+    }
+  ]
+}
